@@ -74,11 +74,11 @@ public class RaycastInteraction : MonoBehaviour
 
                 //invoke whatever aim function is associated
                 ti.OnAim.Invoke();
-
-                //invoke whatever interact function is associated
-                if (Input.GetButtonDown(interactionButton))
-                    ti.OnInteract.Invoke();
             }
+
+            //invoke whatever interact function is associated
+            if (Input.GetButtonDown(interactionButton))
+                ti.OnInteract.Invoke();
         }
         else
         {
